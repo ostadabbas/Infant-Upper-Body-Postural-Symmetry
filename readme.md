@@ -39,7 +39,7 @@ The performance of each pose estimation paradigm (infant domain or adult domain)
 
 ````
 python eval.py
-````.
+````
 
 The evaluation script `eval.py` computes each geometric measure of symmetry for each infant face, and also the resulting performance metrics per pose estimation model. The code is not sophisticated and only depends on popular, stable packages. It outputs results in text form and the following scatter plots:
 
