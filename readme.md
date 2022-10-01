@@ -29,7 +29,16 @@ Users of this repository must abide by the respective licenses of any code inclu
 
 ## Data and model performance evaluations
 
-The `landmarks.csv` file contains all of the data analyzed in the paper, namely, the filenames of the subset of InfAnFace Test chosen to be analyzed, together with some metadata inherited from InfAnFace, and 70 2D landmark coordinates (68 for the face and 2 for the shoulders) from three sources: `gt` -- the ground truth (68 face coordinates from InfAnFace and 2 shoulder coordinates provided by us), `infant` -- infant specific pose estimation models, and `adult` general (largely adult) pose estimation models. The images themselves can be found at the [InfAnFace](https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking) repository. The enumeration of the landmark labels is as depicted:
+The `landmarks.csv` file contains all of the data analyzed in the paper, namely:
+
+* filenames of the subset of InfAnFace chosen for our analysis,
+* metadata inherited from InfAnFace, such as pose attribute labels,
+* 70 2D landmark coordinates (68 for the face and 2 for the shoulders) from:
+    * `gt`: the ground truth (68 face coordinates from InfAnFace and 2 shoulder coordinates newly labeled by us),
+    * `infant`: infant specific pose estimation models, and
+    * `adult`: general (largely adult) pose estimation models.
+
+The images themselves can be found at the [InfAnFace](https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking) repository. The enumeration of the landmark labels is as depicted here:
 
 <div align="center">
 <img src="face-numbers.png" alt="Face and shoulder landmarks" width="400"/>
