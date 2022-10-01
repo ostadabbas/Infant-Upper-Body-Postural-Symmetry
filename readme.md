@@ -1,6 +1,6 @@
 # Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis
 
-**Note:** This repository is intended to be used by computer vision practitioners, but we hope the results and techniques will be of interest to a wider audience as well, such as researchers or clinicians in pediatric health and development. As such, we encourage those interested in working with our data or models to get in touch with our lab, [Augmented Cognition Lab](https://web.northeastern.edu/ostadabbas/), at <ostadabbas@ece.neu.edu>, to discuss opportunities for collaboration.
+**Note:** This repository is intended to be used by computer vision practitioners, but we hope the results and techniques will be of interest to a wider audience as well, including researchers or clinicians in pediatric health and development. As such, we encourage those interested in working with our data or models to get in touch with our lab, [Augmented Cognition Lab](https://web.northeastern.edu/ostadabbas/), at <ostadabbas@ece.neu.edu>, to discuss opportunities for collaboration.
 
 ## Introduction 
 This is the official repository for:
