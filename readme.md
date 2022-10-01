@@ -8,7 +8,7 @@ Wan, M., Huang, X., Tunik, B., & Ostadabbas, S.  "Automatic Assessment of Infant
 In this paper, we apply computer vision pose estimation techniques developed expressly for the data-scarce infant domain to the study of torticollis, a common condition in infants and children characterized by a persistent neck tilt or twist to one side. Specifically, we study six geometric measurements of symmetry derived from the pediatric physical therapy and ophthalmology research literature, illustrated here:
 
 <div align="center">
-<img src="geometric-quantities.jpg" alt="Geometric measurements of symmetry pertaining to torticollis" width="400"/>
+<img src="geometric-quantities.png" alt="Geometric measurements of symmetry pertaining to torticollis" width="400"/>
 </div>
 
 This repository is intended to be used by computer vision practitioners, but we hope the results and techniques will be of interest to a wider audience as well, such as researchers or clinicians in pediatric health and development. As such, we encourage those interested in working with our data or models to get in touch with our lab, [Augmented Cognition Lab](https://web.northeastern.edu/ostadabbas/), at <ostadabbas@ece.neu.edu>, to discuss opportunities for collaboration.
@@ -16,7 +16,7 @@ This repository is intended to be used by computer vision practitioners, but we 
 Our paper makes use of the [InfAnFace](https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking) dataset of infant faces with facial landmark labels, which we supplement with additional shoulder landmark labels. We employ two facial landmark estimation models, also from the InfAnFace repository: HRNet-R90JT, which is specifically designed for the infant domain, and HRNet, designed for a largely adult domain. We also use two body pose (skeleton) estimation models, from the [FiDIP](https://github.com/ostadabbas/Infant-Pose-Estimation) repository: the FiDIP model, specifically designed for infants, and the DarkPose model, designed largely for adults. The following illustrates predictions of some of the geometric quantities used to define our measurements of symmetry:
 
 <div align="center">
-<img src="predictions.jpg" alt="Predictions of geometric quantities pertaining to torticollis" width="400"/>
+<img src="predictions.png" alt="Predictions of geometric quantities pertaining to torticollis" width="400"/>
 </div>
 
 We first describe how to reproduce the performance evaluations described in our paper, based on the ground truth and pose estimation predictions of the face and shoulder landmarks from the models listed above. Then we go back and explain how these predictions can be obtained from their respective repositories.
@@ -32,7 +32,7 @@ Users of this repository must abide by the respective licenses of any code inclu
 The `landmarks.csv` file contains all of the data analyzed in the paper, namely, the filenames of the subset of InfAnFace Test chosen to be analyzed, together with some metadata inherited from InfAnFace, and 70 2D landmark coordinates (68 for the face and 2 for the shoulders) from three sources: `gt` -- the ground truth (68 face coordinates from InfAnFace and 2 shoulder coordinates provided by us), `infant` -- infant specific pose estimation models, and `adult` general (largely adult) pose estimation models. The images themselves can be found at the [InfAnFace](https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking) repository. The enumeration of the landmark labels is as depicted:
 
 <div align="center">
-<img src="face-numbers.jpg" alt="Face and shoulder landmarks" width="400"/>
+<img src="face-numbers.png" alt="Face and shoulder landmarks" width="400"/>
 </div>
 
 The performance of each pose estimation paradigm (infant domain or adult domain) in the prediction of each geometric measure of symmetry (osl: orbit slopes angle, rfs: relative face size, fa: facial angle, ga: gaze angle, td: translational deformity, and hhd: habitual head deviation) can be obtained with 
