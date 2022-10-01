@@ -1,11 +1,11 @@
 # Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis
 
+**Note:** This repository is intended to be used by computer vision practitioners, but we hope the results and techniques will be of interest to a wider audience as well, such as researchers or clinicians in pediatric health and development. As such, we encourage those interested in working with our data or models to get in touch with our lab, [Augmented Cognition Lab](https://web.northeastern.edu/ostadabbas/), at <ostadabbas@ece.neu.edu>, to discuss opportunities for collaboration.
+
 ## Introduction 
 This is the official repository for:
 
 Wan, M., Huang, X., Tunik, B., & Ostadabbas, S.  "Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis." *The 17th IEEE International Conference on Automatic Face and Gesture Recognition, Workshop on Artificial Intelligence for Automated Human Health-care and Monitoring* (AI4Healthcare @ FG 2023). [[arXiv link]()]
-
-This repository is intended to be used by computer vision practitioners, but we hope the results and techniques will be of interest to a wider audience as well, such as researchers or clinicians in pediatric health and development. As such, we encourage those interested in working with our data or models to get in touch with our lab, [Augmented Cognition Lab](https://web.northeastern.edu/ostadabbas/), at <ostadabbas@ece.neu.edu>, to discuss opportunities for collaboration.
 
 In this paper, we apply computer vision pose estimation techniques developed expressly for the data-scarce infant domain to the study of torticollis, a common condition in infants and children characterized by a persistent neck tilt or twist to one side. Specifically, we study six geometric measurements of symmetry derived from the pediatric physical therapy and ophthalmology research literature, illustrated here:
 
