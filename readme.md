@@ -5,13 +5,13 @@ This is the official repository for:
 
 Wan, M., Huang, X., Tunik, B., & Ostadabbas, S.  "Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis." *The 17th IEEE International Conference on Automatic Face and Gesture Recognition, Workshop on Artificial Intelligence for Automated Human Health-care and Monitoring* (AI4Healthcare @ FG 2023). [[arXiv link]()]
 
+This repository is intended to be used by computer vision practitioners, but we hope the results and techniques will be of interest to a wider audience as well, such as researchers or clinicians in pediatric health and development. As such, we encourage those interested in working with our data or models to get in touch with our lab, [Augmented Cognition Lab](https://web.northeastern.edu/ostadabbas/), at <ostadabbas@ece.neu.edu>, to discuss opportunities for collaboration.
+
 In this paper, we apply computer vision pose estimation techniques developed expressly for the data-scarce infant domain to the study of torticollis, a common condition in infants and children characterized by a persistent neck tilt or twist to one side. Specifically, we study six geometric measurements of symmetry derived from the pediatric physical therapy and ophthalmology research literature, illustrated here:
 
 <div align="center">
 <img src="geometric-quantities.png" alt="Geometric measurements of symmetry pertaining to torticollis" width="400"/>
 </div>
-
-This repository is intended to be used by computer vision practitioners, but we hope the results and techniques will be of interest to a wider audience as well, such as researchers or clinicians in pediatric health and development. As such, we encourage those interested in working with our data or models to get in touch with our lab, [Augmented Cognition Lab](https://web.northeastern.edu/ostadabbas/), at <ostadabbas@ece.neu.edu>, to discuss opportunities for collaboration.
 
 Our paper makes use of the [InfAnFace](https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking) dataset of infant faces with facial landmark labels, which we supplement with additional shoulder landmark labels. We employ two facial landmark estimation models, also from the InfAnFace repository: HRNet-R90JT, which is specifically designed for the infant domain, and HRNet, designed for a largely adult domain. We also use two body pose (skeleton) estimation models, from the [FiDIP](https://github.com/ostadabbas/Infant-Pose-Estimation) repository: the FiDIP model, specifically designed for infants, and the DarkPose model, designed largely for adults. The following illustrates predictions of some of the geometric quantities used to define our measurements of symmetry:
 
@@ -50,13 +50,13 @@ The performance of each pose estimation paradigm (infant domain or adult domain)
 python eval.py
 ````
 
-The evaluation script `eval.py` computes each geometric measure of symmetry for each infant face, and also the resulting performance metrics per pose estimation model. The code is not sophisticated and only depends on popular, stable packages. It outputs results in text form and the following scatter plots:
+The evaluation script `eval.py` computes each geometric measure of symmetry for each infant face, and also the resulting performance metrics per pose estimation model. The code is not sophisticated and depends only on popular, stable packages. It outputs results in text form and the following scatter plots:
 
 <div align="center">
 <img src="scatter.jpg" alt="Prediction performance and scatter plots" width="400"/>
 </div>
 
-## Model inference
+## Face and body pose estimation models
 
 Inference is performed on the images in the [InfAnFace](https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking) dataset, specifically, the subset listed in `landmarks.csv`.
 
