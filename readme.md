@@ -70,7 +70,8 @@ Here is a BibTeX entry for our preprint:
 @inproceedings{WanTorticollis2022,
   title={Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis},
   author={Michael Wan and Xiaofei Huang and Bethany Tunik and Sarah Ostadabbas},
-  booktitle = {Submittted},
+  booktitle = {Artificial Intelligence for Automated Human Health-care and Monitoring (AI4Healthcare)
+  at 17th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2023)},
   year={2022}
 }
 ````
