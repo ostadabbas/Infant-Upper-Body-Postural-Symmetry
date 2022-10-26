@@ -62,7 +62,7 @@ Inference is performed on the images in the [InfAnFace](https://github.com/ostad
 
 Facial landmark estimation predictions are obtained from the pretrained models in the InfAnFace repository. Specifically, the `HRNet-R90JT` model is used to represent infant-domain-specific facial landmark estimation, and `HRNet` is used to represent the adult-domain estimation, and these inference results can be reproduced by following Steps 1-3 and 11-12 [here](https://github.com/ostadabbas/Infant-Facial-Landmark-Detection-and-Tracking#facial-landmark-estimation-models). The latter model is effectively the same as the official default pretrained [HRNet](https://github.com/HRNet/HRNet-Facial-Landmark-Detection) model (for face landmark estimation). 
 
-Body joint pose estimation (or skeleton estimation) uses pretrained models from the [FiDIP](https://github.com/ostadabbas/Infant-Pose-Estimation) repository. The `hrnet_fidip` model is used for infant estimation, and the DarkPose (HRNet-W48, 384x288) `coco/w48_384x288` model is used for adult estimation, with the latter taken from [DarkPose](https://github.com/ilovepose/DarkPose).
+Body joint pose estimation (or skeleton estimation) uses pretrained models from the [FiDIP](https://github.com/ostadabbas/Infant-Pose-Estimation) repository. The `hrnet_fidip` model is used for infant estimation, and the DarkPose (HRNet-W48, 384x288) `coco/w48_384x288` model is used for adult estimation, with the latter taken from [DarkPose](https://github.com/ilovepose/DarkPose). FiDIP requires body bounding boxes for inference, which we obtained from [this](https://github.com/eriklindernoren/PyTorch-YOLOv3) PyTorch implementation of YOLOv3.
 
 ## Citation
 Here is a BibTeX entry for our preprint:
