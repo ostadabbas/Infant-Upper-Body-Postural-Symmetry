@@ -5,7 +5,7 @@
 ## Introduction 
 This is the official repository for:
 
-Wan, M., Huang, X., Tunik, B., & Ostadabbas, S.  "Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis." *The 17th IEEE International Conference on Automatic Face and Gesture Recognition, Workshop on Artificial Intelligence for Automated Human Health-care and Monitoring* (AI4Healthcare @ FG 2023). [[arXiv link]()]
+Wan, M., Huang, X., Tunik, B., & Ostadabbas, S.  "Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis." *The 17th IEEE International Conference on Automatic Face and Gesture Recognition, Workshop on Artificial Intelligence for Automated Human Health-care and Monitoring* (AI4Healthcare @ FG 2023). [[arXiv link](https://arxiv.org/abs/2210.15022)]
 
 In this paper, we apply computer vision pose estimation techniques developed expressly for the data-scarce infant domain to the study of torticollis, a common condition in infants and children characterized by a persistent neck tilt or twist to one side. Specifically, we study six geometric measurements of symmetry derived from the pediatric physical therapy and ophthalmology research literature, illustrated here:
 
@@ -65,7 +65,7 @@ Facial landmark estimation predictions are obtained from the pretrained models i
 Body joint pose estimation (or skeleton estimation) uses pretrained models from the [FiDIP](https://github.com/ostadabbas/Infant-Pose-Estimation) repository. The `hrnet_fidip` model is used for infant estimation, and the DarkPose (HRNet-W48, 384x288) `coco/w48_384x288` model is used for adult estimation, with the latter taken from [DarkPose](https://github.com/ilovepose/DarkPose). FiDIP requires body bounding boxes for inference, which we obtained from [this](https://github.com/eriklindernoren/PyTorch-YOLOv3) PyTorch implementation of YOLOv3.
 
 ## Citation
-Here is a BibTeX entry for our preprint:
+Here is a BibTeX entry for our [paper](https://arxiv.org/abs/2210.15022):
 ````
 @inproceedings{WanTorticollis2022,
   title={Automatic Assessment of Infant Face and Upper-Body Symmetry as Early Signs of Torticollis},
